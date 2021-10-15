@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+.container {
+/*     max-width: 100%; */    
+    margin:0 40px 0 40px;
+    padding: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.navbar_brand {
+    width: 100px;
+}
+
+.navbar_logo {
+    width: 100%;
+}
+
+.navbar_item {
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient( to right, #ff512f 0%, #e22a1d 51%, #ff512f 100%);
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.primary_button {
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient( to right, #ff512f 0%, #e22a1d 51%, #ff512f 100%);
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navbar_item:hover {
+    background-image: linear-gradient( to right, #eb330e 100%, #e9066c 51%, #f03a16 0%);
+}
+
+.hero_container{
+    margin-top: 25px;
+    width: 100%;
+    height: 400px;
+}
+.hero_image_container {
+    width: 100px;
+    
+}
+
+.hero_image {
+    width: 100%;
+    height: 400px;
+}
+
+.hero_description {
+    width: 200px;
+}
+
+.hero_document {
+    width: 100%;
+}
+
+.explore_menu_description {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 10px 0 5px 0;
+    text-align: center;
+}
+
+.explore_menu_title {
+    color: rgb(2, 2, 20);
+    padding: 10px 0 10px 0;
+}
+
+.food_card_image_container {
+    width: 100%;
+}
+
+.food_image {
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.food_card {
+    background-color: #fff;
+    margin-top: 12px;
+    border-radius: 3px;
+    box-shadow: 0 12px 12px #0c0113;
+}
+
+.food_card_description {
+    padding: 12px;
+}
+
+.view_more_button {
+    width: 100%;
+  
+}
+
+.restaurent_description {
+    width: 100%;
+}
+
+.restaurent_des {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.restaurent1,
+.restaurent2 {
+    width: 100%;
+}
+
+.restaurent_image {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.restaurent_image_container {
+    margin: 30px;
+}
+
+.restaurent1,
+.restaurent3 {
+    width: 150px;
+    height: 80px;
+}
+
+.restaurent2,
+.restaurent4 {
+    width: 200px;
+    height: 100px;
+}
+
+.row1 {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.row2 {
+    display: flex;
+    align-items: initial;
+    flex-direction: row-reverse;
+    gap: 12px;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.upadate_container {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.linking_container {
+    margin-top: 10px;
+}
+
+.email_block {
+    height: 30px;
+    border: 1px solid rgb(197, 67, 89);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.email_block::placeholder {
+    color: #bdbcbc;
+}
+
+.quote_container {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-image: url("./assets/restaurant.jpg") center center / cover no-repeat;
+}
+
+.quote_image_overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #0a4065;
+    opacity: 50%;
+}
+
+.quote_text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+footer {
+    color: #fff;
+    background-image: linear-gradient( to right, #ff512f 0%, #e22a1d 51%, #ff512f 100%);
+    margin-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer_logo_container {
+    text-align: center;
+}
+
+.footer_image {
+    padding-top: 50px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.info_list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+}
+
+ @media (max-width: 78px) {
+    .nav {
+        justify-content: space-between;
+        padding: 20px;
+        width: auto;
+        height: 10px;
+    }
+    .navbar_item {
+        font-size: 20px;
+        padding: 6px 3px;
+        font-size: 15px;
+    }
+    .hero_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero_container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero_image_container {
+        width: 100%;
+    }
+    .hero_image {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .hero_description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero_document {
+        font-size: 25px;
+    }
+    .navbar_items {
+        padding: 20px;
+    }
+    .explore_menu_container {
+        margin: 5rem 0;
+        position: relative;
+        width: 100%;
+    }
+    .explore_menu_gradient_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient( to right, #ff512f 0%, #e22a1d 51%, #ff512f 100%);
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        transform: skewy(-5deg);
+    }
+    #pizza {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+    .explore_menu_list {
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 15px;
+    }
+    .view_more_button {
+        background: none;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .restaurent_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .row2 {
+        margin-top: 10px;
+    }
+    .restaurent1,
+    .restaurent3 {
+        width: 150px;
+        height: 80px;
+    }
+    .restaurent2,
+    .restaurent4 {
+        width: 200px;
+        height: 100px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
